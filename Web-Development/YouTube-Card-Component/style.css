@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .container{
+            display: flex;
+            justify-content:center ;
+            background-color: black;
+            color: white;
+            
+        }
+        .cName{
+            padding: 20px 0px;
+            font-family: Roboto,sans-serif;
+            color: grey;
+        }
+        .title{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+            color: white;
+        }
+        .thumb{
+            width: 80%;
+            
+            display: flex;
+            flex-direction:row;
+            
+            gap: 20px;
+        }
+        .dura{
+            margin: auto;
+            border: 2px solid white;
+            color: white;
+            background-color: black;
+            width:40px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            bottom: 5px;
+            right: 5px;
+            padding: 2px 5px;
+            border-radius: 8px;
+        }
+        .img img{
+            border-radius: 20px;
+            
+        }
+        .img{
+            position: relative;
+        }
