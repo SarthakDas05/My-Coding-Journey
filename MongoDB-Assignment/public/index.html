@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            width:30vw;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="gen">Generate</button>
+    <button id="del">Delete</button>
+    <script>
+        async function Generate() {
+            document.querySelector("#gen").addEventListener("click",async()=>{
+                let a = await fetch("/generate", {method: "POST"})
+                let b = await a.text();
+                alert(b);
+                
+            })
+                  
+        }
+        
+        async function Delete() {
+            document.querySelector("#del").addEventListener("click",async()=>{
+                let a = await fetch("/delete", {method: "POST"})
+                let b = await a.text();
+                alert(b);
+            })
+                  
+        }
+        Generate()
+        Delete()
+    </script>
+
+</body>
+</html>
